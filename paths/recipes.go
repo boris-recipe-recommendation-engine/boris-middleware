@@ -14,7 +14,7 @@ import (
 type RecipeRequest struct{
 	Strict bool `json:"isStrict"`
 	MethodType string `json:"CookingMethod"`
-	Params schemas.CookingMethodTable
+	Params schemas.CookingMethodTable `json:"Params"`
 }
 
 type recipeName struct{

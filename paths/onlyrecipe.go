@@ -4,11 +4,11 @@ import (
 	"boris-middleware/schemas"
 	"fmt"
 	"os"
+	"strings"
 
 	"database/sql"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/near/borsh-go"
 )
 
 type StrictRecipeRequest struct{
@@ -47,12 +47,7 @@ func CookingMethodStrict(db *sql.DB) (func(c *fiber.Ctx) error){
 
 				res_arr = append(res_arr, string(dat))
 			}
-
-			data, err := borsh.Serialize(res_arr)
-			if err != nil {
-				return err
-			}			
-			ctx.Send(data)
+			ctx.SendString(strings.Join(res_arr, "~~"))
 
 			return nil
 	})

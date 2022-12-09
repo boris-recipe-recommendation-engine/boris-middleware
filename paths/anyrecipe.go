@@ -9,7 +9,6 @@ import (
 	"database/sql"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/near/borsh-go"
 )
 
 type LaxRecipeRequest struct{
@@ -46,12 +45,7 @@ func CookingMethodLax(db *sql.DB) (func(c *fiber.Ctx) error){
 
 				res_arr = append(res_arr, string(dat))
 			}
-
-			data, err := borsh.Serialize(res_arr)
-			if err != nil {
-				return err
-			}			
-			ctx.Send(data)
+			ctx.SendString(strings.Join(res_arr, "~~"))
 
 			return nil
 	})

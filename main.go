@@ -50,6 +50,7 @@ func main(){
 
     app.Post("/laxrecipe", lax_recipe)
     app.Post("/strictrecipe", strict_recipe)
+	app.Static("/media", "./media")
 
     log.Fatal(app.Listen(":4000"))
 }

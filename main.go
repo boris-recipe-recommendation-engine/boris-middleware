@@ -21,7 +21,7 @@ func Connect() error {
         User:   "root",
         Passwd: "0o0p0o0p",
         Net:    "tcp",
-        Addr:   "127.0.0.1:3306",
+        Addr:   "host.docker.internal:3306",
         DBName: "boris_recipes",
     }
 

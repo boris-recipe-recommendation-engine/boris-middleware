@@ -60,19 +60,19 @@
     "step":[
         {
             "text":"Divide shrimp and remove the shell, but keep it and side it aside.",
-            "images":["r2p1.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p1.png"]
         },
         {
             "text":"Chop up the shrimp until it is paste-like.",
-            "images":["r2p2.png","r2p3.png","r2p4.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p2.png","/tofu-soup-shrimp-balls/r2p3.png","/tofu-soup-shrimp-balls/r2p4.png"]
         },
         {
             "text":"Add 1 tsp white pepper powder, 1/2 tbsp salt, 1/2 tbsp sugar, egg white, and cornstarch.",
-            "images":["r2p5.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p5.png"]
         },
         {
             "text":"Stir the shrimp in one direction until it gains elasticity.",
-            "images":["r2p6.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p6.png"]
         },
         {
             "text":"Cover with plastic  Refrigerate for 1-2 hours, the texture will be more elastic.",
@@ -81,19 +81,19 @@
 
         {
             "text":"Cut tofu into pieces.",
-            "images":["r2p7.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p7.png"]
         },
         {
             "text":"Preheat a frying pan over medium heat and the oil.",
-            "images":["r2p8.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p8.png"]
         },
         {
             "text":"Put in the tofu.",
-            "images":["r2p9.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p9.png"]
         },
         {
             "text":"Cook it until it is golden brown.",
-            "images":["r2p10.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p10.png"]
         },
 
         {
@@ -106,7 +106,7 @@
         },
         {
             "text":"Add in scallion and shrimp shells",
-            "images":["r2p11.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p11.png"]
         },
         {
             "text":"Add in boiling water or broth",
@@ -118,19 +118,19 @@
         },
         {
             "text":"Add in the tomatoes.",
-            "images":["r2p12.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p12.png"]
         },
         {
             "text":"Cook it until the tomatoes are soft.",
-            "images":["r2p13.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p13.png"]
         },
         {
             "text":"Model shrimp paste into balls.",
-            "images":["r2p14.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p14.png"]
         },
         {
             "text":"Add in tofu.",
-            "images":["r2p15.png"]
+            "images":["/tofu-soup-shrimp-balls/r2p15.png"]
         }
     ]
 }

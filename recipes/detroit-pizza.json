@@ -60,11 +60,11 @@
     "steps":[
         {
             "text":"Combine ingredients in a medium bowl and stir. ",
-            "images":["r1p1.png"]
+            "images":["/detroit-pizza/r1p1.png"]
         },
         {
             "text":"Once it comes together, use a wet hand to give the dough 20-30 folds. You can also use a stand mixer with a dough hook if preferred. ",
-            "images":["r1p2.png", "r1p3.png"]
+            "images":["/detroit-pizza/r1p2.png", "/detroit-pizza/r1p3.png"]
         },
         
         
@@ -74,12 +74,12 @@
         },
         {
             "text":"After 30 min, build more strength into the dough by grabbing an of dough, stretching it out, and folding back over.",
-            "images":["r1p4.png"]
+            "images":["/detroit-pizza/r1p4.png"]
         },
         
         {
             "text":"After these stretches and folds, tuck and fold the dough a few more times to shape and stretch the dough into a taught ball. ",
-            "images":["r1p5.png"]
+            "images":["/detroit-pizza/r1p5.png"]
         },
         
         {
@@ -92,7 +92,7 @@
         },
         {
             "text":"Flip the dough onto a floured surface and divide it in half.",
-            "images":["r1p6.png"]
+            "images":["/detroit-pizza/r1p6.png"]
         },
         
         {
@@ -109,7 +109,7 @@
         },
         {
             "text":"Cover again and let rise for 45-60 mins.",
-            "images":["r1p7.png"]
+            "images":["/detroit-pizza/r1p7.png"]
         },
 
         {
@@ -122,18 +122,18 @@
         },
         {
             "text":"When garlic is golden and fragrant, add tomato sauce, paste,  salt,  sugar, basil oregano, and stir to combine.",
-            "images":["r1p8.png"]
+            "images":["/detroit-pizza/r1p8.png"]
         },
 
         {
             "text":"Simmer for about 25 minutes or until thickened. ",
-            "images":["r1p9.png"]
+            "images":["/detroit-pizza/r1p9.png"]
         },
 
 
         {
             "text":"Preheat oven and pizza stone to 500 F.",
-            "images":["r1p10.png","r1p11.png","r1p12.png"]
+            "images":["/detroit-pizza/r1p10.png","/detroit-pizza/r1p11.png","/detroit-pizza/r1p12.png"]
         },
         {
             "text":"Spread cheese over the dough.",
@@ -145,11 +145,11 @@
         },
         {
             "text":"Add pepperoni or toppings of choice on top.",
-            "images":["r1p13.png"]
+            "images":["/detroit-pizza/r1p13.png"]
         },
         {
             "text":"Load the pan directly on top of the pizza stone or baking sheet and bake for 16-18 minutes",
-            "images":["r1p14.png"]
+            "images":["/detroit-pizza/r1p14.png"]
         }
     ]
 }

@@ -8,6 +8,8 @@ import (
 
 	"database/sql"
 
+	"encoding/json"
+
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -16,37 +18,36 @@ type LaxRecipeRequest struct{
 	Params []string `json:"Params"`
 }
 
-func CookingMethodLax(db *sql.DB) (func(c *fiber.Ctx) error){
-	return (
-		func(ctx *fiber.Ctx) error {
-			method_req := LaxRecipeRequest{}
-			if err := ctx.BodyParser(&method_req); err != nil{
-				return ctx.SendString(err.Error())
-			}
-			query := strings.Join(method_req.Params, "= 1, ")
+func CookingMethodLax(ctx *fiber.Ctx, db *sql.DB) error{
 
-			rows, err := db.Query("SELECT recipe_name FROM ? WHERE (?)", method_req.MethodType, query); 
-			if err != nil{
-				return ctx.SendString(err.Error())
-			}
-
-			var dat []byte
-
-			var res_arr = []string{}
-
-			for rows.Next(){
-				recipe_name := schemas.RecipeName{}
-				rows.Scan(&recipe_name.Name)
+	method_req := LaxRecipeRequest{}
 	
-				dat, err = os.ReadFile(fmt.Sprintf("./recipes/%s.json",recipe_name.Name))
-				if err != nil{
-					return ctx.SendString(err.Error())
-				}
+	if err := json.Unmarshal(ctx.Body(), &method_req); err != nil{
+		return ctx.SendString(err.Error())
+	}
+	query := strings.Join(method_req.Params, " = 1, ")+" = 1"
 
-				res_arr = append(res_arr, string(dat))
-			}
-			ctx.SendString(strings.Join(res_arr, "~~"))
+	rows, err := db.Query(fmt.Sprintf("SELECT recipe_name FROM %s WHERE (%s)", method_req.MethodType, query)); 
+	if err != nil{
+		return ctx.SendString(err.Error())
+	}
 
-			return nil
-	})
+	var dat []byte
+
+	var res_arr = []string{}
+
+	for rows.Next(){
+		recipe_name := schemas.RecipeName{}
+		rows.Scan(&recipe_name.Name)
+
+		dat, err = os.ReadFile(fmt.Sprintf("./recipes/%s.json",recipe_name.Name))
+		if err != nil{
+			return ctx.SendString(err.Error())
+		}
+		res_arr = append(res_arr, string(dat))
+	}
+	rep := strings.Join(res_arr, "~~")
+	ctx.SendString(rep)
+
+	return nil
 }

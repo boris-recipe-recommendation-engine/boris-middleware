@@ -49,7 +49,7 @@
     "steps":[
         {
             "text":"Beat the porkchop",
-            "images":["r4p1.png"]
+            "images":["/braised-pork-chop/r4p1.png"]
         },
         {
             "text":"Cover the pork chop with cornstarch and remove any extra powder that is on it",
@@ -57,11 +57,11 @@
         },
         {
             "text":"Rub salt into 1 side of the pork chop. Make sure the salt is spread completely on the surface of the pork chop",
-            "images":["r4p2.png"]
+            "images":["/braised-pork-chop/r4p2.png"]
         },
         {
             "text":"Cut the pork chop in half. It would be great to separate the pork chop into groups that have bone and no bone attached to it. When frying the pork chop, the amount of time needed is the same as cooking the two groups separately.",
-            "images":["r4p3.png"]
+            "images":["/braised-pork-chop/r4p3.png"]
         },
         {
             "text":"Prepare the sauce",
@@ -73,7 +73,7 @@
         },
         {
             "text":"Fry (both sides) pork chops and take them out",
-            "images":["r4p4.png","r4p5.png","r4p6.png"]
+            "images":["/braised-pork-chop/r4p4.png","/braised-pork-chop/r4p5.png","/braised-pork-chop/r4p6.png"]
         },
         {
             "text":"Wash the wok and add a little bit of oil to the wok. The pork chop has oil on it so not a lot of oil is needed else the result will be too greasy",
@@ -85,7 +85,7 @@
         },
         {
             "text":"Pour the sauce onto the pork chop and pour half a bowl of hot water from the side of the work.",
-            "images":["r4p7.png"]
+            "images":["/braised-pork-chop/r4p7.png"]
         },
         {
             "text":"Turn the flame to mid-level.",
@@ -117,11 +117,11 @@
         },
         {
             "text":"Add the green onion to the wok and let it cook for 15 seconds",
-            "images":["r4p8.png"]
+            "images":["/braised-pork-chop/r4p8.png"]
         },
         {
             "text":"Pour the sauce onto the porkchop",
-            "images":["r4p9.png"]
+            "images":["/braised-pork-chop/r4p9.png"]
         }
     ]
 }

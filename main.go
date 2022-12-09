@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	paths "boris-middleware/paths"
@@ -10,6 +11,7 @@ import (
 	"database/sql"
 
 	"github.com/go-sql-driver/mysql"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 )
 
 // Database instance
@@ -21,7 +23,7 @@ func Connect() error {
         User:   "root",
         Passwd: "0o0p0o0p",
         Net:    "tcp",
-        Addr:   "host.docker.internal:3306",
+        Addr:   "127.0.0.1:3306",
         DBName: "boris_recipes",
     }
 
@@ -43,14 +45,20 @@ func main(){
 		log.Fatal(err)
 	}
 
-	lax_recipe := paths.CookingMethodLax(db)
-	strict_recipe := paths.CookingMethodStrict(db)
-
     app := fiber.New()
+	app.Use(cors.New())
+	app.Get("/", func(ctx *fiber.Ctx) error{
+		return ctx.SendString("alive")
+	})
 
-    app.Post("/laxrecipe", lax_recipe)
-    app.Post("/strictrecipe", strict_recipe)
+    app.Post("/laxrecipe", func(ctx *fiber.Ctx) error{
+		return paths.CookingMethodLax(ctx, db)
+	})
+    app.Post("/strictrecipe", func(ctx *fiber.Ctx) error{
+		return paths.CookingMethodStrict(ctx, db)
+	})
 	app.Static("/media", "./media")
 
+	fmt.Println("starting fiber")
     log.Fatal(app.Listen(":4000"))
 }

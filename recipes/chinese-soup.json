@@ -30,7 +30,7 @@
         },
         {
             "text":"Cut the cabbage and separate the cabbage into the leaf and root pieces and slice the mushroom. The suggested piece for the cabbage is half an inch per piece.",
-            "images":["r3p1.png","r3p2.png"]
+            "images":["/chinese-soup/r3p1.png","/chinese-soup/r3p2.png"]
         },
         {
             "text":"Add oil to the wok. Turn the flame to high and wait until the oil is mostly heated",
@@ -46,7 +46,7 @@
         },
         {
             "text":"Pour the leave pieces of cabbage and mushroom into the wok",
-            "images":["r3p3.png","r3p4.png"]
+            "images":["/chinese-soup/r3p3.png","/chinese-soup/r3p4.png"]
         },
         {
             "text":"Add lesser salt than before onto the leaves in the wok",
@@ -54,7 +54,7 @@
         },
         {
             "text":"Stir and mix the cabbage and mushroom in the wok",
-            "images":["r3p5.png"]
+            "images":["/chinese-soup/r3p5.png"]
         },
         {
             "text":"Let the ingredients in the wok settle down for 2 minutes. This is to let the cabbage and mushroom soften",
@@ -70,7 +70,7 @@
         },
         {
             "text":"Take out the cabbage and pour it into the dish.",
-            "images":["r3p6.png"]
+            "images":["/chinese-soup/r3p6.png"]
         }
     ]
 }

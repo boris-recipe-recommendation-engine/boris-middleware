@@ -21,13 +21,13 @@ type CookingMethodTable struct {
 	Water         bool `json:"water,omitempty"`
 	CornStarch    bool `json:"corn_starch,omitempty"`
 	SoySauce      bool `json:"soy_sauce,omitempty"`
-	CookingWine   bool `json:"cookingWine,omitempty"`
+	CookingWine   bool `json:"cooking_wine,omitempty"`
 	Ginger        bool `json:"ginger,omitempty"`
 	Scallion      bool `json:"scallion,omitempty"`
 	Vinegar       bool `json:"vinegar,omitempty"`
 	Cabbage       bool `json:"cabbage,omitempty"`
 	Mushroom      bool `json:"mushroom,omitempty"`
-	ChickenPowder bool `json:"chickenPowder,omitempty"`
+	ChickenPowder bool `json:"chicken_powder,omitempty"`
 	Yeast         bool `json:"yeast,omitempty"`
 	Tomato_sauce  bool `json:"tomato_sauce,omitempty"`
 	Tomato_paste  bool `json:"tomato_paste,omitempty"`

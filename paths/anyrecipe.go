@@ -21,13 +21,13 @@ func CookingMethodLax(db *sql.DB) (func(c *fiber.Ctx) error){
 		func(ctx *fiber.Ctx) error {
 			method_req := LaxRecipeRequest{}
 			if err := ctx.BodyParser(&method_req); err != nil{
-				return err
+				return ctx.SendString(err.Error())
 			}
 			query := strings.Join(method_req.Params, "= 1, ")
 
 			rows, err := db.Query("SELECT recipe_name FROM ? WHERE (?)", method_req.MethodType, query); 
 			if err != nil{
-				return err
+				return ctx.SendString(err.Error())
 			}
 
 			var dat []byte
@@ -40,7 +40,7 @@ func CookingMethodLax(db *sql.DB) (func(c *fiber.Ctx) error){
 	
 				dat, err = os.ReadFile(fmt.Sprintf("./recipes/%s.json",recipe_name.Name))
 				if err != nil{
-					return err
+					return ctx.SendString(err.Error())
 				}
 
 				res_arr = append(res_arr, string(dat))

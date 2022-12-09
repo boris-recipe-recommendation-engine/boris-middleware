@@ -38,7 +38,7 @@ func CookingMethodLax(db *sql.DB) (func(c *fiber.Ctx) error){
 				recipe_name := schemas.RecipeName{}
 				rows.Scan(&recipe_name.Name)
 	
-				dat, err = os.ReadFile(fmt.Sprintf("./recipes/%s.txt",recipe_name.Name))
+				dat, err = os.ReadFile(fmt.Sprintf("./recipes/%s.json",recipe_name.Name))
 				if err != nil{
 					return err
 				}

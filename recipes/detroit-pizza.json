@@ -1,0 +1,155 @@
+{
+    "title":"Detroit Style Pizza",
+    "ingredients":[
+        {
+            "name":"flour",
+            "amount":"335g "
+        },
+        {
+            "name":"salt",
+            "amount":"21g"
+        },
+        {
+            "name":"yeast",
+            "amount":"2g"
+        },
+
+
+        {
+            "name":"tomato sauce",
+            "amount":"32oz"
+        },
+        {
+            "name":"tomato paste",
+            "amount":"6oz"
+        },
+        {
+            "name":"sugar",
+            "amount":"13g"
+        },
+        {
+            "name":"basil",
+            "amount":"2 tsp"
+        },
+        {
+            "name":"oregano",
+            "amount":"2 tsp"
+        },
+        {
+            "name":"garlic",
+            "amount":"2 minced cloves"
+        },
+        {
+            "name":"onion powder",
+            "amount":"2 tsp"
+        },
+        {
+            "name":"oil",
+            "amount":"2 TBSP"
+        },
+
+        {
+            "name":"cheese",
+            "amount":"16oz low-moisture mozzarella"
+        },
+        {
+            "name":"pepperoni",
+            "amount":"1 stick"
+        }
+    ],
+    "steps":[
+        {
+            "text":"Combine ingredients in a medium bowl and stir. ",
+            "images":["r1p1.png"]
+        },
+        {
+            "text":"Once it comes together, use a wet hand to give the dough 20-30 folds. You can also use a stand mixer with a dough hook if preferred. ",
+            "images":["r1p2.png", "r1p3.png"]
+        },
+        
+        
+        {
+            "text":"Cover the bowl with plastic and let it sit in a warm spot for 30 minutes. ",
+            "images":[]
+        },
+        {
+            "text":"After 30 min, build more strength into the dough by grabbing an of dough, stretching it out, and folding back over.",
+            "images":["r1p4.png"]
+        },
+        
+        {
+            "text":"After these stretches and folds, tuck and fold the dough a few more times to shape and stretch the dough into a taught ball. ",
+            "images":["r1p5.png"]
+        },
+        
+        {
+            "text":"Wrap the bowl with plastic and set it in a warm place for 2 hours. After the 2 hours dough should have doubled in size.",
+            "images":[]
+        },
+        {
+            "text":"To prep pans for dough, glug 2 tbsp oil into each pan and smear over the bottom and sides.",
+            "images":[]
+        },
+        {
+            "text":"Flip the dough onto a floured surface and divide it in half.",
+            "images":["r1p6.png"]
+        },
+        
+        {
+            "text":"Lay half of the dough into each pan and gently press to spread.",
+            "images":[]
+        },
+        {
+            "text":"Cover pans and allow dough to relax for 30 minutes.",
+            "images":[]
+        },
+        {
+            "text":"After the 30 minutes, gently stretch and press dough to cover the bottom of the pans.",
+            "images":[]
+        },
+        {
+            "text":"Cover again and let rise for 45-60 mins.",
+            "images":["r1p7.png"]
+        },
+
+        {
+            "text":"Preheat a sauce pot over medium heat.",
+            "images":[]
+        },
+        {
+            "text":"Add oil and garlic.",
+            "images":[]
+        },
+        {
+            "text":"When garlic is golden and fragrant, add tomato sauce, paste,  salt,  sugar, basil oregano, and stir to combine.",
+            "images":["r1p8.png"]
+        },
+
+        {
+            "text":"Simmer for about 25 minutes or until thickened. ",
+            "images":["r1p9.png"]
+        },
+
+
+        {
+            "text":"Preheat oven and pizza stone to 500 F.",
+            "images":["r1p10.png","r1p11.png","r1p12.png"]
+        },
+        {
+            "text":"Spread cheese over the dough.",
+            "images":[]
+        },
+        {
+            "text":"Spoon sauce in two thick lines, lengthwise down each dough, leaving the cheese uncovered in the middle and on either side of the lines of the sauce.",
+            "images":[]
+        },
+        {
+            "text":"Add pepperoni or toppings of choice on top.",
+            "images":["r1p13.png"]
+        },
+        {
+            "text":"Load the pan directly on top of the pizza stone or baking sheet and bake for 16-18 minutes",
+            "images":["r1p14.png"]
+        }
+    ]
+}

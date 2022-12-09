@@ -20,3 +20,7 @@ type CookingMethodTable struct {
 	Vanilla     bool `json:"vanilla,omitempty"`
 	Water       bool `json:"water,omitempty"`
 }
+
+type RecipeName struct {
+	Name string `json:"name,omitempty"`
+}

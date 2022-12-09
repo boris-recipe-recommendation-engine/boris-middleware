@@ -43,11 +43,13 @@ func main(){
 		log.Fatal(err)
 	}
 
-	method_resolver := paths.CookingMethodTable(db)
+	lax_recipe := paths.CookingMethodLax(db)
+	strict_recipe := paths.CookingMethodStrict(db)
 
     app := fiber.New()
 
-    app.Post("/recipes", method_resolver)
+    app.Post("/laxrecipe", lax_recipe)
+    app.Post("/strictrecipe", strict_recipe)
 
     log.Fatal(app.Listen(":4000"))
 }

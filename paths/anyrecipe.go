@@ -27,6 +27,7 @@ func CookingMethodLax(ctx *fiber.Ctx, db *sql.DB) error{
 	}
 	query := strings.Join(method_req.Params, " = 1, ")+" = 1"
 
+	fmt.Print(query+"\n")
 	rows, err := db.Query(fmt.Sprintf("SELECT recipe_name FROM %s WHERE (%s)", method_req.MethodType, query)); 
 	if err != nil{
 		return ctx.SendString(err.Error())

@@ -38,7 +38,7 @@ type CookingMethodTable struct {
 	OnionPowder   bool `json:"onion_powder,omitempty"`
 	Pepperoni     bool `json:"pepperoni,omitempty"`
 	Cheese        bool `json:"cheese,omitempty"`
-	PepperPowder  bool `json:"pepperPowder,omitempty"`
+	PepperPowder  bool `json:"pepper_powder,omitempty"`
 }
 
 type RecipeName struct {
